@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/jQuery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/WOW.js"></script>
+		<script type="text/javascript">new WOW().init();</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>S&uuml;rreal</title>
+		<script>
+			$(function() {
+	  			$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+					{
+						var target = $(this.hash);
+      					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      					if (target.length) {
+        					$('html,body').animate({
+          						scrollTop: target.offset().top
+        					}, 1000);
+        					return false;
+      					}
+					}
+    				this.toggleClass("active");
+  				});
+			});				
+		</script>
+	</head>
+	<body>
+		<!-- Fixed navbar -->
+    	<nav class="navbar navbar-inverse navbar-fixed-top">
+      		<div class="container">
+        		<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+          			<a class="navbar-brand" href="#">S&uuml;rreal Cereal</a>
+        		</div>
+        		<div id="navbar" class="navbar-collapse collapse">
+          			<ul class="nav navbar-nav">
+            			<li><a href="#">Home</a></li>
+            			<li><a href="pick.html">Pick your Ingredients</a></li>
+        				<li><a href="#contact">About</a></li>
+          			</ul>
+    			</div><!--/.nav-collapse -->
+      		</div>
+		</nav>
+        <div class="jumbotron">
+            <div class="maincontainer container">
+                <h1 class="wow fadeInUp">S&uuml;rreal &middot; Breakfast a la you</h1>
+            </div>
+            <hr style="margin-top: 21%; border-color: black; border-width: 2px" class="wow zoomIn" data-wow-offset="40">
+        	<div class="pickyourfood container">
+        		<h1>Steps to your Cereal Goodness</h1>
+        		<div class="container">
+        			<ol>
+        				<b><h2><li class="wow fadeIn" data-wow-offset="10">Pick your Ingredients</li></h2></b>    				
+        				<b><h2><li class="wow fadeIn" data-wow-offset="10">Order your food</li></h2></b>
+        				<b><h2><li class="wow fadeIn" data-wow-offset="10">Eat your great cereal</li></h2></b>
+        			</ol>
+        		</div>
+        	</div>
+        </div>
+	</body>
+</html>

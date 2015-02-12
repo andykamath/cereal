@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/jQuery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/WOW.js"></script>
+		<script type="text/javascript">new WOW().init();</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>S&uuml;rreal&middot; Pick your Ingredients</title>
+		<script>
+			$(function() {
+	  			$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+					{
+						var target = $(this.hash);
+      					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      					if (target.length) {
+        					$('html,body').animate({
+          						scrollTop: target.offset().top
+        					}, 1000);
+        					return false;
+      					}
+					}
+    				this.toggleClass("active");
+  				});
+			});				
+		</script>
+	</head>
+	<body>
+		<!-- Fixed navbar -->
+    	<nav class="navbar navbar-inverse navbar-fixed-top">
+      		<div class="container">
+        		<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+          			<a class="navbar-brand" href="#">S&uuml;rreal Cereal</a>
+        		</div>
+        		<div id="navbar" class="navbar-collapse collapse">
+          			<ul class="nav navbar-nav">
+            			<li><a href="index.html">Home</a></li>
+            			<li><a href="pick.html">Pick your Ingredients</a></li>
+        				<li><a href="#contact">About</a></li>
+          			</ul>
+    			</div><!--/.nav-collapse -->
+      		</div>
+		</nav>
+        <div class="jumbotron">
+            <div class="maincontainer container">
+                <h1 class="wow fadeInUp">S&uuml;rreal &middot; Picketh thy Ingredients</h1>
+            </div>
+            <hr style="margin-top: 21%; border-color: black; border-width: 2px" class="wow zoomIn" data-wow-offset="40">
+        	<div class="pickyourfood container">
+        		<h1>Available Ingredients</h1>
+        		<div class="container">
+        			<form action="https://docs.google.com/forms/d/1-JPtS_PWjrqRWFCOwJ5yDo-O63iby-4H9YipPaNo2aI/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_883125723"><div class="ss-q-title">What Ingredients Do You Want
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+
+<ul class="ss-choices" role="group" aria-label="What Ingredients Do You Want  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Chocolate" id="group_1222687096_1" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Chocolate</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Honey" id="group_1222687096_2" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Honey</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Strawberry" id="group_1222687096_3" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Strawberry</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Raspberry" id="group_1222687096_4" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Raspberry</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Banana" id="group_1222687096_5" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Banana</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Choose for me" id="group_1222687096_6" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Choose for me</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Cantalope" id="group_1222687096_7" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Cantalope</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Watermeloane" id="group_1222687096_8" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Watermeloane</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Chicken" id="group_1222687096_9" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Chicken</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Lettuce" id="group_1222687096_10" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Lettuce</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Sugar" id="group_1222687096_11" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Sugar</span>
+</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Cookies" id="group_1222687096_12" role="checkbox" class="ss-q-checkbox"></span>
+<span class="ss-choice-label">Cookies</span>
+</label></li></ul>
+<div class="error-message" id="883125723_errorMessage"></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;-426793363733414085&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+
+
+<input type="hidden" name="fbzx" value="-426793363733414085">
+
+<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+</td>
+</tr></tbody></table></div></ol></form>
+        		</div>
+        	</div>
+        </div>
+	</body>
+</html>
