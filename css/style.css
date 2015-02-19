@@ -5,30 +5,42 @@
 @import url(http://fonts.googleapis.com/css?family=Muli);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(metro-bootstrap.min.css);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+@font-face
+{
+  font-family: 'PT Sans';
+}
+
+html,body
+{
+  font-family: 'Droid Sans';
+}
 
 .jumbotron
-{
-	margin-bottom: 0;
-	background: #dba841; /* Old browsers */
-	background: -moz-linear-gradient(top,  #dba841 2%, #f1da36 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#dba841), color-stop(100%,#f1da36)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #dba841 2%,#f1da36 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #dba841 2%,#f1da36 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #dba841 2%,#f1da36 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #dba841 2%,#f1da36 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dba841', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+{  
+  height: 100%;
+  padding-top: 100px;
+  background: #fff;
+  background-image: url(../img/bg.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  margin-bottom: 0;
 }
 
-.maincontainer
+h1
 {
-	margin-top: 20%
+  font-family: 'Open Sans';
+  font-size: 42px
 }
 
-li
+p
 {
-	list-style-type: none;
+  font-size: 20px
 }
 
-
-	background: url(http://www.inkspotcreative.com/wp-content/uploads/2013/07/blurred-background-7.jpg);
-	background-size: 100% 100%;
+.aboutus
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

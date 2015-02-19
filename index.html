@@ -4,8 +4,10 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/WOW.js"></script>
 		<script type="text/javascript">new WOW().init();</script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		<script src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>S&uuml;rreal</title>
+		<title>Apple Cereal</title>
 		<script>
 			$(function() {
 	  			$('a[href*=#]:not([href=#])').click(function() {
@@ -27,7 +29,7 @@
 	</head>
 	<body>
 		<!-- Fixed navbar -->
-    	<nav class="navbar navbar-inverse navbar-fixed-top">
+    	<nav class="navbar navbar-inverse navbar-fixed-top wow fadeIn">
       		<div class="container">
         		<div class="navbar-header">
       				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -36,32 +38,47 @@
             			<span class="icon-bar"></span>
             			<span class="icon-bar"></span>
           			</button>
-          			<a class="navbar-brand" href="#">S&uuml;rreal Cereal</a>
+          			<a class="navbar-brand" href="#">Surreal</a>
         		</div>
         		<div id="navbar" class="navbar-collapse collapse">
           			<ul class="nav navbar-nav">
-            			<li><a href="#">Home</a></li>
-            			<li><a href="pick.html">Pick your Ingredients</a></li>
-        				<li><a href="#contact">About</a></li>
+            			<li class="wow fadeIn" data-wow-delay="250ms"><a href="#">Home</a></li>
+            			<li class="wow fadeIn" data-wow-delay="500ms"><a href="#history">History</a></li>
+        				<li class="wow fadeIn" data-wow-delay="750ms"><a href="#contact">Contact</a></li>
           			</ul>
     			</div><!--/.nav-collapse -->
       		</div>
 		</nav>
-        <div class="jumbotron">
-            <div class="maincontainer container">
-                <h1 class="wow fadeInUp">S&uuml;rreal &middot; Breakfast a la you</h1>
-            </div>
-            <hr style="margin-top: 21%; border-color: black; border-width: 2px" class="wow zoomIn" data-wow-offset="40">
-        	<div class="pickyourfood container">
-        		<h1>Steps to your Cereal Goodness</h1>
-        		<div class="container">
-        			<ol>
-        				<b><h2><li class="wow fadeIn" data-wow-offset="10">Pick your Ingredients</li></h2></b>    				
-        				<b><h2><li class="wow fadeIn" data-wow-offset="10">Order your food</li></h2></b>
-        				<b><h2><li class="wow fadeIn" data-wow-offset="10">Eat your great cereal</li></h2></b>
-        			</ol>
-        		</div>
-        	</div>
-        </div>
+
+		<div class="wow fadeIn jumbotron" data-wow-delay="1s">
+			<div class="container" align="center">
+				<img src="img/logo.png" height="300" class="wow fadeIn" data-wow-delay="1250ms">
+				<h1 class="wow fadeInUp" data-wow-delay="1500ms">Surreal</h1>
+			</div>
+		</div>
+
+		<div class="aboutus wow fadeIn">
+			<div class="container">
+				<h1>About Us</h1>
+				<p>Josh and Andy were sick and tired of normal cereal. Everything is always prepackaged. It's really annoying and frustrating to go out and find a cereal that meets all your needs. That's when we came up with <strong>Surreal Cereal</strong>. Build your own cereal and avoid all hassles!</p>
+			</div>
+		</div>	
+
+		<script type="text/javascript">
+			$(function() {
+  				$('a[href*=#]:not([href=#])').click(function() {
+    				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      					var target = $(this.hash);
+      					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      					if (target.length) {
+        					$('html,body').animate({
+          						scrollTop: target.offset().top
+        					}, 1000);
+        					return false;
+      					}
+    				}
+  				});
+			});
+		</script>
 	</body>
 </html>
