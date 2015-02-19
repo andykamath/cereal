@@ -5,7 +5,7 @@
 		<script type="text/javascript" src="js/WOW.js"></script>
 		<script type="text/javascript">new WOW().init();</script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>S&uuml;rreal&middot; Pick your Ingredients</title>
+		<title>Surreal &middot; Pick your Ingredients</title>
 		<script>
 			$(function() {
 	  			$('a[href*=#]:not([href=#])').click(function() {
@@ -26,81 +26,128 @@
 		</script>
 	</head>
 	<body>
-		<!-- Fixed navbar -->
-    	<nav class="navbar navbar-inverse navbar-fixed-top">
-      		<div class="container">
-        		<div class="navbar-header">
-      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            			<span class="sr-only">Toggle navigation</span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-          			</button>
-          			<a class="navbar-brand" href="#">S&uuml;rreal Cereal</a>
-        		</div>
-        		<div id="navbar" class="navbar-collapse collapse">
-          			<ul class="nav navbar-nav">
-            			<li><a href="index.html">Home</a></li>
-            			<li><a href="pick.html">Pick your Ingredients</a></li>
-        				<li><a href="#contact">About</a></li>
-          			</ul>
-    			</div><!--/.nav-collapse -->
-      		</div>
-		</nav>
-        <div class="jumbotron">
-            <div class="maincontainer container">
-                <h1 class="wow fadeInUp">S&uuml;rreal &middot; Picketh thy Ingredients</h1>
+		    <!-- Fixed navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top wow fadeIn">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Surreal</a>
             </div>
-            <hr style="margin-top: 21%; border-color: black; border-width: 2px" class="wow zoomIn" data-wow-offset="40">
-        	<div class="pickyourfood container">
-        		<h1>Available Ingredients</h1>
-        		<div class="container">
-        			<form action="https://docs.google.com/forms/d/1-JPtS_PWjrqRWFCOwJ5yDo-O63iby-4H9YipPaNo2aI/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
-<div class="ss-form-question errorbox-good" role="listitem">
-<div dir="ltr" class="ss-item  ss-checkbox"><div class="ss-form-entry">
-<label class="ss-q-item-label" for="entry_883125723"><div class="ss-q-title">What Ingredients Do You Want
-</div>
-<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="wow fadeIn" data-wow-delay="250ms"><a href="index.html">Home</a></li>
+                  <li class="wow fadeIn" data-wow-delay="500ms"><a href="pick.html">Make your Cereal</a></li>
+                </ul>
+          </div><!--/.nav-collapse -->
+          </div>
+    </nav>
 
-<ul class="ss-choices" role="group" aria-label="What Ingredients Do You Want  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Chocolate" id="group_1222687096_1" role="checkbox" class="ss-q-checkbox"></span>
+    <div class="wow fadeIn jumbotron" data-wow-delay="1s">
+      <div class="container" align="center">
+        <img src="img/logo.png" height="300" class="wow fadeIn" data-wow-delay="1250ms">
+        <h1 class="wow fadeInUp" data-wow-delay="1500ms">Pick your Ingredients</h1>
+      </div>
+    </div>
+
+    <div class="pick">
+      <div class="container">
+        <h1>Pick from the list</h1>
+        <form action="https://docs.google.com/forms/d/1o_QI13wBjd4p1Ykz6b2U0TafyP5yS9CqiQdKrLMTutw/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+<div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_1810613792"><div class="ss-q-title">What all do you want?
+<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label><br>
+<span class="ss-required-asterisk" aria-hidden="true"></span></div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+
+<ul class="ss-choices ss-choices-required" role="group" aria-label="What all do you want?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Pick for me!" id="group_1274571752_1" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Pick for me!</span>
+</label><br></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Chocolate" id="group_1274571752_2" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
 <span class="ss-choice-label">Chocolate</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Honey" id="group_1222687096_2" role="checkbox" class="ss-q-checkbox"></span>
+</label><br></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Honey" id="group_1274571752_3" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
 <span class="ss-choice-label">Honey</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Strawberry" id="group_1222687096_3" role="checkbox" class="ss-q-checkbox"></span>
+</label><br></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Assorted Fruit" id="group_1274571752_4" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Assorted Fruit</span>
+</label><br></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Strawberry" id="group_1274571752_5" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
 <span class="ss-choice-label">Strawberry</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Raspberry" id="group_1222687096_4" role="checkbox" class="ss-q-checkbox"></span>
+</label><br></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Raspberry" id="group_1274571752_6" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
 <span class="ss-choice-label">Raspberry</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Banana" id="group_1222687096_5" role="checkbox" class="ss-q-checkbox"></span>
+</label><br></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Banana" id="group_1274571752_7" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
 <span class="ss-choice-label">Banana</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Choose for me" id="group_1222687096_6" role="checkbox" class="ss-q-checkbox"></span>
-<span class="ss-choice-label">Choose for me</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Cantalope" id="group_1222687096_7" role="checkbox" class="ss-q-checkbox"></span>
+</label><br></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Cantalope" id="group_1274571752_8" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
 <span class="ss-choice-label">Cantalope</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Watermeloane" id="group_1222687096_8" role="checkbox" class="ss-q-checkbox"></span>
-<span class="ss-choice-label">Watermeloane</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Chicken" id="group_1222687096_9" role="checkbox" class="ss-q-checkbox"></span>
-<span class="ss-choice-label">Chicken</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Lettuce" id="group_1222687096_10" role="checkbox" class="ss-q-checkbox"></span>
-<span class="ss-choice-label">Lettuce</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Sugar" id="group_1222687096_11" role="checkbox" class="ss-q-checkbox"></span>
-<span class="ss-choice-label">Sugar</span>
-</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1222687096" value="Cookies" id="group_1222687096_12" role="checkbox" class="ss-q-checkbox"></span>
+</label><br></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Watermelon" id="group_1274571752_9" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
+<span class="ss-choice-label">Watermelon</span>
+</label><br></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="checkbox" name="entry.1274571752" value="Cookies" id="group_1274571752_10" role="checkbox" class="ss-q-checkbox" aria-required="true"></span>
 <span class="ss-choice-label">Cookies</span>
-</label></li></ul>
-<div class="error-message" id="883125723_errorMessage"></div>
-<input type="hidden" name="draftResponse" value="[,,&quot;-426793363733414085&quot;]
+</label><br></li></ul>
+<div class="error-message" id="1810613792_errorMessage"></div>
+<div class="required-message">This is a required question</div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_28645020"><div class="ss-q-title">Your Name
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+<input type="text" name="entry.28645020" value="" class="ss-q-short" id="entry_28645020" dir="auto" aria-label="Your Name  " title="">
+<div class="error-message" id="252859669_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_885134686"><div class="ss-q-title">Your Email
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+<input type="text" name="entry.885134686" value="" class="ss-q-short" id="entry_885134686" dir="auto" aria-label="Your Email  " title="">
+<div class="error-message" id="435268056_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_591310582"><div class="ss-q-title">Address
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+<input type="text" name="entry.591310582" value="" class="ss-q-short" id="entry_591310582" dir="auto" aria-label="Address  " title="">
+<div class="error-message" id="813287694_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_530579833"><div class="ss-q-title">City
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+<input type="text" name="entry.530579833" value="" class="ss-q-short" id="entry_530579833" dir="auto" aria-label="City  " title="">
+<div class="error-message" id="1867279671_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_237437045"><div class="ss-q-title">State
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+<input type="text" name="entry.237437045" value="" class="ss-q-short" id="entry_237437045" dir="auto" aria-label="State  " title="">
+<div class="error-message" id="586491825_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+<label class="ss-q-item-label" for="entry_333020866"><div class="ss-q-title">Zip
+</div>
+<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label><br>
+<input type="text" name="entry.333020866" value="" class="ss-q-short" id="entry_333020866" dir="auto" aria-label="Zip  " title="">
+<div class="error-message" id="1725008802_errorMessage"></div>
+<div class="required-message">This is a required question</div>
+</div></div></div>
+<input type="hidden" name="draftResponse" value="[,,&quot;3225243224399862222&quot;]
 ">
 <input type="hidden" name="pageHistory" value="0">
 
 
-<input type="hidden" name="fbzx" value="-426793363733414085">
+<input type="hidden" name="fbzx" value="3225243224399862222">
 
 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action btn btn-default">
 </td>
 </tr></tbody></table></div></ol></form>
-        		</div>
-        	</div>
-        </div>
+      </div>
+    </div>
 	</body>
 </html>
